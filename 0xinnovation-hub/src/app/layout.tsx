@@ -26,7 +26,7 @@ export default function RootLayout({
         <html lang="en" className="dark">
             <head>
                 {/* Preconnect to external services for faster loading */}
-                <link rel="preconnect" href="https://yfhuunutzomuecqwfxil.supabase.co" />
+                <link rel="preconnect" href="https://yfhuu  nutzomuecqwfxil.supabase.co" />
                 <link rel="dns-prefetch" href="https://yfhuunutzomuecqwfxil.supabase.co" />
             </head>
             <body className={`${inter.className} bg-background text-foreground min-h-screen flex flex-col relative select-none`}>

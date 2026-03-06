@@ -8,13 +8,13 @@ export default function ClientLockdown() {
     const handleContextMenu = (e: MouseEvent) => {
       e.preventDefault();
     };
-    
+
     // 2. Prevent Common DevTools Shortcuts
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
-        e.key === 'F12' || 
-        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) || 
-        (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) || 
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) ||
         (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c')) ||
         (e.ctrlKey && (e.key === 'U' || e.key === 'u'))
       ) {
@@ -27,11 +27,11 @@ export default function ClientLockdown() {
     const handleDragStart = (e: DragEvent) => {
       e.preventDefault();
     };
-    
+
     document.addEventListener('contextmenu', handleContextMenu);
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('dragstart', handleDragStart);
-    
+
     return () => {
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('keydown', handleKeyDown);
