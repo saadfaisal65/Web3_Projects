@@ -39,7 +39,7 @@ A robust, transparent, and secure decentralized election application (DApp) buil
 
 1. **Clone the Repo:**
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/saadfaisal65/0xinnovations.git
    cd voting-system
    ```
 
